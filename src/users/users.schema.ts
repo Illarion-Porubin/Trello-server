@@ -17,10 +17,6 @@ export class Users {
   @ApiProperty({example: "qwe123ewq", description: "Пароль пользователя"})
   @Prop({required: true})
   password: string
-
-  @ApiProperty({example: "Developer", description: "Роль пользователя"})
-  @Prop({required: true})
-  roles: string
 }
 
 export const UserSchema = SchemaFactory.createForClass(Users)
