@@ -6,9 +6,6 @@ export type UsersDocument = Users & Document;
 @Schema()
 export class Users {
   @Prop()
-  userId: string;
-
-  @Prop()
   email: string;
 
   @Prop()
@@ -17,8 +14,8 @@ export class Users {
   @Prop()
   password: string
 
-  @Prop([String])
-  roles: string[]
+  @Prop()
+  roles: string
 }
 
 export const UserSchema = SchemaFactory.createForClass(Users)
